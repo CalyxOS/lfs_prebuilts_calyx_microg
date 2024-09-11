@@ -1,0 +1,60 @@
+android_app_import {
+    name: "GmsCore",
+
+    certificate: "certs/microg",
+
+    privileged: true,
+    product_specific: true,
+    required: [
+        "privapp-permissions-microg.xml",
+        "whitelist-microg.xml",
+    ],
+    uses_libs: ["com.android.location.provider"],
+    optional_uses_libs: [
+        "org.apache.http.legacy",
+        "androidx.window.extensions",
+        "androidx.window.sidecar",
+    ],
+    apk: "GmsCore/play-services-core-mapbox-default-release.apk",
+}
+
+android_app_import {
+    name: "FakeStore",
+
+    certificate: "certs/microg",
+
+    privileged: true,
+    product_specific: true,
+    optional_uses_libs: [
+        "androidx.window.extensions",
+        "androidx.window.sidecar",
+    ],
+    apk: "GmsCore/vending-app-default-release-unsigned.apk",
+}
+
+android_app_import {
+    name: "GsfProxy",
+
+    certificate: "certs/microg",
+
+    product_specific: true,
+    apk: "GsfProxy/services-framework-proxy-release-unsigned.apk",
+}
+
+prebuilt_etc_xml {
+    name: "privapp-permissions-microg.xml",
+
+    product_specific: true,
+    src: "privapp-permissions-microg.xml",
+    filename_from_src: true,
+    sub_dir: "permissions",
+}
+
+prebuilt_etc_xml {
+    name: "whitelist-microg.xml",
+
+    product_specific: true,
+    src: "whitelist-microg.xml",
+    filename_from_src: true,
+    sub_dir: "sysconfig",
+}
