@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "982a20ba_b574a3a5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-09-12T22:42:55Z",
+      "side": 1,
+      "message": "`FAILED: ninja: \u0027build/make/target/product/security/certs/microg.x509.pem\u0027`\n\nIt looks in the wrong place.\n\nThere are other examples in the tree of certificates being registered and picked up by apps, try `android_certificate`",
+      "revId": "8b94f6978a57894703ef76000d3b2d90f1ad127f",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
