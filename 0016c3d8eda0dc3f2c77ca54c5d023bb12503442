@@ -41,6 +41,30 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "698613a6_74de6d79",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2024-09-12T14:33:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c91ea93d_5432ed31",
+      "range": {
+        "startLine": 49,
+        "startChar": 4,
+        "endLine": 49,
+        "endChar": 41
+      },
+      "revId": "0016c3d8eda0dc3f2c77ca54c5d023bb12503442",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e3201238_05638d5e",
@@ -54,6 +78,30 @@
       "writtenOn": "2024-09-11T17:53:09Z",
       "side": 1,
       "message": "Ditto",
+      "range": {
+        "startLine": 57,
+        "startChar": 4,
+        "endLine": 57,
+        "endChar": 39
+      },
+      "revId": "0016c3d8eda0dc3f2c77ca54c5d023bb12503442",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a715820a_8a2ebda3",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2024-09-12T14:33:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e3201238_05638d5e",
       "range": {
         "startLine": 57,
         "startChar": 4,
