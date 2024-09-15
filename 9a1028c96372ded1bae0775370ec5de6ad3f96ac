@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "14e6dd28_4f23b6a7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-09-15T00:09:36Z",
+      "side": 1,
+      "message": "Looks ok in general.\n\nNeed to test once as an upgrade from pre microg-details build to verify.\n\nAn easy way to test with prod unsigned target-files:\n\n```\nunzip calyx_bluejay-target_files-$VER.zip \u0027IMAGES/*\u0027\nfor d in boot dtbo pvmfw vbmeta vbmeta_system vbmeta_vendor; do fastboot flash $d ${d}.img; done; fastboot reboot fastboot; for d in product system system_ext system_other vendor vendor_dlkm; do fastboot flash ${d} ${d}.img; done\n# Setup the device, microg, etc\n# ------\n# Update to a known-broken build in the same way as above.\n# Verify that it\u0027s broken\n# ------\n# Finally, Make a build with this commit\nfastboot flashall\n# Verify fix!\n```",
+      "revId": "9a1028c96372ded1bae0775370ec5de6ad3f96ac",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
