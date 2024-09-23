@@ -26,6 +26,30 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "5110cb19_d410b043",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-09-23T11:29:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bd90f892_1eacee3f",
+      "range": {
+        "startLine": 7,
+        "startChar": 20,
+        "endLine": 7,
+        "endChar": 34
+      },
+      "revId": "9a1028c96372ded1bae0775370ec5de6ad3f96ac",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "14e6dd28_4f23b6a7",
         "filename": "/PATCHSET_LEVEL",
         "patchSetId": 1
@@ -55,6 +79,24 @@
       "side": 1,
       "message": "If \"Verify that it\u0027s broken\" means that the Device Registration toggle is off while Cloud Messaging is on\n\nand \"Verify fix\" means that the Device Registration toggle turns back on as expected\n\nthen I did test this in the past and it worked, just not with this specific binary. I\u0027m okay with not doing it all over again.",
       "parentUuid": "14e6dd28_4f23b6a7",
+      "revId": "9a1028c96372ded1bae0775370ec5de6ad3f96ac",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0aa15e41_2bee1cc3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-09-23T11:29:15Z",
+      "side": 1,
+      "message": "makes sense.",
+      "parentUuid": "533528fa_f17521bc",
       "revId": "9a1028c96372ded1bae0775370ec5de6ad3f96ac",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
