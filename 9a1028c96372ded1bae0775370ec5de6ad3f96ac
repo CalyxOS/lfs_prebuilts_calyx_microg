@@ -99,6 +99,24 @@
       "parentUuid": "533528fa_f17521bc",
       "revId": "9a1028c96372ded1bae0775370ec5de6ad3f96ac",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "159099f5_23ac71bf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-09-24T22:52:26Z",
+      "side": 1,
+      "message": "Verified on prod devices with prod update, it\u0027s fine.\n\nBefore update one had the toggle off, after update it was on, as expected.",
+      "parentUuid": "0aa15e41_2bee1cc3",
+      "revId": "9a1028c96372ded1bae0775370ec5de6ad3f96ac",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
