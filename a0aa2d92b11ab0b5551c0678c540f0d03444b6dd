@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "638c8045_dfe714a2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-12-30T21:56:09Z",
+      "side": 1,
+      "message": "https://play.google.com/store/apps/details?id\u003dde.alexamin.railmap works",
+      "revId": "a0aa2d92b11ab0b5551c0678c540f0d03444b6dd",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
