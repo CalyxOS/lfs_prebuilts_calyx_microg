@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "32f2bbb1_3e3fdb1f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 6
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2025-04-23T22:42:20Z",
+      "side": 1,
+      "message": "This commit isn\u0027t merge due to the upcoming upstream merge which may make it not be needed anymore, or \n\nThe hash is on gerrit though, it\u0027s 34527: [TMP] Manually increment version code | https://review.calyxos.org/c/CalyxOS/platform_external_microg_GmsCore/+/34527/5",
+      "revId": "edbd491f4ff0d61f42a867735255ec81fa15f9e1",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
