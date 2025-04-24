@@ -16,8 +16,6 @@
 
 <permissions>
     <privapp-permissions package="com.android.vending">
-        <permission name="android.permission.DELETE_PACKAGES"/>
-        <permission name="android.permission.INSTALL_PACKAGES"/>
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
     </privapp-permissions>
 
