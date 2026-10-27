@@ -3,10 +3,21 @@ android_app_certificate {
     certificate: "certs/microg",
 }
 
-android_app_import {
-    name: "GmsCore",
+soong_config_module_type {
+    name: "calyx_microg_app_import",
+    module_type: "android_app_import",
+    config_namespace: "calyx",
+    bool_variables: ["use_presigned_apks"],
+    properties: [
+        "apk",
+        "certificate",
+        "preprocessed",
+        "presigned",
+    ],
+}
 
-    certificate: ":microg.certificate",
+calyx_microg_app_import {
+    name: "GmsCore",
 
     privileged: true,
     product_specific: true,
@@ -20,13 +31,22 @@ android_app_import {
         "androidx.window.extensions",
         "androidx.window.sidecar",
     ],
-    apk: "GmsCore/play-services-core-mapbox-default-release.apk",
+
+    soong_config_variables: {
+        use_presigned_apks: {
+            preprocessed: true,
+            presigned: true,
+            apk: "GmsCore/presigned/GmsCore-signed.apk",
+            conditions_default: {
+                certificate: ":microg.certificate",
+                apk: "GmsCore/play-services-core-mapbox-default-release.apk",
+            },
+        },
+    },
 }
 
-android_app_import {
+calyx_microg_app_import {
     name: "FakeStore",
-
-    certificate: ":microg.certificate",
 
     privileged: true,
     product_specific: true,
@@ -34,16 +54,36 @@ android_app_import {
         "androidx.window.extensions",
         "androidx.window.sidecar",
     ],
-    apk: "GmsCore/vending-app-default-release-unsigned.apk",
+
+    soong_config_variables: {
+        use_presigned_apks: {
+            preprocessed: true,
+            presigned: true,
+            apk: "GmsCore/presigned/FakeStore-signed.apk",
+            conditions_default: {
+                certificate: ":microg.certificate",
+                apk: "GmsCore/vending-app-default-release-unsigned.apk",
+            },
+        },
+    },
 }
 
-android_app_import {
+calyx_microg_app_import {
     name: "GsfProxy",
 
-    certificate: ":microg.certificate",
-
     product_specific: true,
-    apk: "GsfProxy/services-framework-proxy-release-unsigned.apk",
+
+    soong_config_variables: {
+        use_presigned_apks: {
+            preprocessed: true,
+            presigned: true,
+            apk: "GsfProxy/presigned/GsfProxy-signed.apk",
+            conditions_default: {
+                certificate: ":microg.certificate",
+                apk: "GsfProxy/services-framework-proxy-release-unsigned.apk",
+            },
+        },
+    },
 }
 
 prebuilt_etc_xml {
